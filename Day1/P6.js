@@ -1,8 +1,8 @@
 const fs=require('fs');
-const write=()=>{
-    fs.writeFile('./mydir/file.txt',"hello bro",(err)=>{
+const Append=()=>{
+    fs.appendFile('file.txt',"hello bro append",(err)=>{
         if(err) throw err;
         console.log("file written");
     });
 }
-write();
+Append();
